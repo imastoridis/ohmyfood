@@ -1,3 +1,53 @@
+h1 {
+  color: #fdcb46;
+  font-family: "passion one";
+  font-size: 52px; }
 
+h2 {
+  color: #fdcb46;
+  font-family: "passion one";
+  font-size: 30px;
+  margin-left: 25px;
+  margin-right: 25px; }
+
+header {
+  display: flex;
+  background-color: #579c87;
+  justify-content: center; }
+
+#footer {
+  display: flex;
+  background-color: #579c87;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+img, a {
+  pointer-events: none; }
+
+@media only screen and (min-width: 350px) {
+  /* Mobile Styles */
+  .container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 55px;
+    margin-right: 55px; }
+
+  img {
+    max-width: 100%;
+    max-height: auto; }
+
+  #header {
+    margin: 0; } }
+/* Tablet Styles */
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; } }
 
 /*# sourceMappingURL=style.css.map */
