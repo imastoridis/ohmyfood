@@ -16,16 +16,17 @@ h2{
 	margin-right: 25px;
 	font-weight:normal;
 }
+h2#note{
+	text-align: center;
+	color: black;
+}
 header {
 	display: flex;
 	background-color: rgb(87,156,135);
 	justify-content: center;
 }
 
-img,a{
-  pointer-events: none;
 
-}
 #footer{
 	display: flex;
 	background-color: rgb(87,156,135);
@@ -124,7 +125,13 @@ img,a{
   		grid-row-gap: 65px;
   		justify-items: center;
 	}
-	
+	.container-p1-menu1{
+		display: flex;
+  		border-radius: 10px;
+  		justify-content:  center;
+
+	}
+
 	.grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8{
 		  text-align: center;
 	}
@@ -152,4 +159,5 @@ img,a{
 		max-width: 80%;
 		max-height: auto;
 	}
+	
 }
