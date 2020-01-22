@@ -8,7 +8,7 @@ h1{
 	font-family: 'passion one' ;
 	font-size: 52px;
 }	
-h2{
+.footer{
 	color: rgb(253,203,70);
 	font-family: 'passion one' ;
 	font-size: 30px;
@@ -16,16 +16,17 @@ h2{
 	margin-right: 25px;
 	font-weight:normal;
 }
-h2#note{
-	text-align: center;
-	color: black;
-}
+
 header {
 	display: flex;
 	background-color: rgb(87,156,135);
 	justify-content: center;
 }
 
+a {
+	text-decoration: none;
+	color:inherit;
+}
 
 #footer{
 	display: flex;
@@ -42,6 +43,14 @@ header {
 	-webkit-box-shadow: 0 0 10px #888888;
 	box-shadow: 0 0 10px #888888;
 }
+
+/*for menu pages*/
+.menu-title{
+	color: black;
+	font-family: 'passion one' ;
+	font-size: 1.5em;
+	font-weight: normal;
+	}
 
 @media only screen and (min-width: 350px) and (max-width: 500px) { /* Mobile Styles */
 	.container{
@@ -67,6 +76,24 @@ header {
 	}
 	#header, {
 		margin: 0;
+	}
+		 /*for menu-page */
+	.container-p1-menu1{
+		display: flex;
+  		border-radius: 10px;
+  		flex-direction: column;
+	}
+
+	.menu-title{
+		display: flex;
+		justify-content: center;
+	}
+	.menu-page{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 100px;
+		margin-left: 2em;
+		margin-right: 2em;
 	}
 }
 
@@ -111,6 +138,24 @@ header {
 		max-width: 100%;
 		max-height: auto;
 	}
+		 /*for menu-page */
+	.container-p1-menu1{
+		display: flex;
+  		border-radius: 10px;
+  		flex-direction: column;
+	}
+
+	.menu-title{
+		display: flex;
+		justify-content: center;
+	}
+	.menu-page{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 200px;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
 }
 
 /* Desktop Styles */
@@ -125,13 +170,7 @@ header {
   		grid-row-gap: 65px;
   		justify-items: center;
 	}
-	.container-p1-menu1{
-		display: flex;
-  		border-radius: 10px;
-  		justify-content:  center;
-
-	}
-
+	
 	.grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8{
 		  text-align: center;
 	}
@@ -146,7 +185,6 @@ header {
 	.grid5{
 		grid-column : 4 / 4;
 	}
-
 	#prochainement{
 		background-color: rgb(87,156,135);
 		width: 350px;
@@ -159,5 +197,22 @@ header {
 		max-width: 80%;
 		max-height: auto;
 	}
-	
+
+	 /*for menu-page */
+	.container-p1-menu1{
+		display: flex;
+  		border-radius: 10px;
+  		flex-direction: column;
+	}
+
+	.menu-title{
+		display: flex;
+		justify-content: center;
+	}
+	.menu-page{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 200px;
+		width: 100%;
+	}
 }
