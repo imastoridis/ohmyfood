@@ -16,6 +16,31 @@ h1 {
   margin-right: 25px;
   font-weight: normal; }
 
+.prochainement {
+  color: #fdcb46;
+  font-family: "passion one";
+  font-size: 30px;
+  margin-left: 23%;
+  margin-right: 25px;
+  font-weight: normal;
+  text-align: left; }
+
+.prochainement:after {
+  display: inline-block;
+  animation: suspension steps(1, end) 1s infinite;
+  content: ''; }
+
+@keyframes suspension {
+  0% {
+    content: ''; }
+  25% {
+    content: '.'; }
+  50% {
+    content: '..'; }
+  75% {
+    content: '...'; }
+  100% {
+    content: ''; } }
 header {
   display: flex;
   background-color: #579c87;
@@ -34,6 +59,33 @@ a {
   left: 0;
   right: 0; }
 
+.footer:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite; }
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg); } }
 .menu {
   -moz-box-shadow: 0 0 10px #888888;
   -webkit-box-shadow: 0 0 10px #888888;
@@ -67,7 +119,7 @@ a {
     margin-left: 10vw;
     margin-right: 10vw;
     margin-top: 10vh;
-    margin-bottom: 12vh; }
+    margin-bottom: 18vh; }
 
   #prochainement {
     background-color: #579c87;
@@ -77,9 +129,11 @@ a {
     margin-top: -15px; }
 
   img {
-    max-width: 100%;
-    max-height: auto;
-    margin-bottom: 10vw; }
+    width: 100%;
+    max-height: auto; }
+
+  .img-hover-zoom {
+    margin-bottom: 2em; }
 
   #header {
     margin: 0; }
@@ -107,7 +161,11 @@ a {
     justify-content: center;
     margin-left: 5%;
     margin-right: 5%;
-    text-align: justify; } }
+    text-align: justify; }
+
+  .grid8 {
+    margin-top: 3em;
+    justify-content: center; } }
 /* Tablet Styles */
 @media only screen and (min-width: 501px) and (max-width: 960px) {
   .container {
@@ -147,18 +205,13 @@ a {
     max-height: auto; }
 
   /*for menu-page */
-  .container-p1-menu1 {
+  #container-p1-menu1 {
     display: flex;
     border-radius: 10px;
+    align-items: center;
     flex-direction: column; }
 
-  .menu-title {
-    display: flex;
-    justify-content: center; }
-
   .menu-page {
-    display: flex;
-    justify-content: center;
     margin-bottom: 200px;
     margin-left: 2em;
     margin-right: 2em; }
@@ -211,10 +264,11 @@ a {
     /*to check the height??*/ }
 
   /*for menu-page */
-  .container-p1-menu1 {
+  #container-p1-menu1 {
     display: flex;
     border-radius: 10px;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
 
   .menu-title {
     display: flex;
@@ -222,9 +276,11 @@ a {
 
   .menu-page {
     display: flex;
-    justify-content: center;
+    max-width: 50%;
     margin-bottom: 200px;
-    width: 100%; }
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: yellow; }
 
   .mention-legales {
     display: flex;
