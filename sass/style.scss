@@ -88,6 +88,13 @@ a {
 	box-shadow: 0 0 10px #888888;
 
 }
+.note{
+	width: 5em;
+	height:auto;
+	justify-content: center;
+	margin-bottom: -1.5em;
+	margin-top: 2em;
+}
 /*for menu pages*/
 .title{
 	color: black;
@@ -97,14 +104,15 @@ a {
 	font-weight: normal;
 	}
 
-/*for menu pages*/
 .menu-title{
 	color: black;
 	font-family: 'passion one' ;
 	font-size: 1.5em;
 	font-weight: normal;
 }
-
+.color-m1{
+	color: rgb(61, 19, 25);
+}
 /*zoom animation*/
 .img-hover-zoom{
 	overflow: hidden;
@@ -120,6 +128,24 @@ a {
 	opacity: 0.7;
 }
 
+/*underline animation */
+.underline{
+	  position:relative;
+	  text-decoration:none;
+	  display:inline-block;
+}
+.underline:after {
+	  display:block;
+	  content: '';
+	  border-bottom: solid 4px #000;  
+	  transform: scaleX(0);  
+	  transition: transform 250ms ease-in-out;
+	  transform-origin:100% 50%
+}
+.underline:hover:after { 
+	  transform: scaleX(1);
+	  transform-origin:0 50%;
+}
 
 @media only screen and (min-width: 350px) and (max-width: 500px) { /* Mobile Styles */
 	.container{
@@ -182,28 +208,54 @@ a {
   		justify-content: center;
   		margin:auto;
   		margin-top: 2em;
-  		margin-bottom: 10em;
+  		margin-bottom: 7em;
   		padding-top:3em;
-  		padding-bottom: 3em;
+  			}
+
+	.note{
+		width: 2em;
+		height:auto;
+		justify-content: center;
+		margin-top: -3em;
 	}
 
 	.menu-title{
 		text-align: center;
 	}
 		
-	.menu-title1{
+	.menu-title1, .menu-title2, .menu-title3 , .menu-title4{
 		font-family: 'Zhi Mang Xing', cursive;
 		text-align: center;
-		font-size: 2em;
-		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-  		-webkit-background-clip: text;
-  		-webkit-text-fill-color: transparent;
+		font-size: 8vw;
+  		width: 100%;
 	}
+
+	.menu-title1{
+		color: rgb(61,19,25);
+	}
+
+	.menu-title2{
+		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+	}	
+
+	.menu-title3{
+		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+	}	
+
+	.menu-title4{
+		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+	}	
 	.menu-items{
 		font-family: 'Titillium Web', sans-serif;
 		width: 85vw;
 		align-items: center;
-		margin-bottom: 3em;
+		margin-bottom: 2.5em;
 		
 	}
 	.menu-course{
@@ -213,7 +265,10 @@ a {
 		display: flex;
 		justify-content: space-between;
 	}
-
+	.menu-list{
+		font-size: 0.5em;
+		text-align: left;
+	}
 
 	.lines-left{
 		max-width:5em;
@@ -226,10 +281,6 @@ a {
 		float: right;
 	}
 
-	.menu-list{
-		font-size: 0.7em;
-		text-align: left;
-	}
 	.price{
 		float: right;
 		margin-right: 1em;
@@ -238,6 +289,10 @@ a {
 
 	ul{
 		margin-left: -3em;
+	}
+
+	.footer{
+		font-size: 1.5em;
 	}
 
 }
@@ -312,7 +367,7 @@ a {
   		margin:auto;
   		margin-top: 2em;
   		margin-bottom: 10em;
-  		padding-top:3em;
+  		
   		padding-bottom: 3em;
 	}
 
@@ -321,36 +376,55 @@ a {
 		display: flex;
 		flex-direction: column;
 		flex-grow: 1;
-		min-width: 40vw;
+		min-width: 55vw; /*edo edo edo*/
 	}
 		
-	.menu-title1{
+	.menu-title1, .menu-title2, .menu-title3 , .menu-title4{
 		font-family: 'Zhi Mang Xing', cursive;
 		text-align: center;
 		font-size: 4.3vw;
-		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-  		-webkit-background-clip: text;
-  		-webkit-text-fill-color: transparent;
   		width: 100%;
 	}
+
+	.menu-title1{
+		color: rgb(61,19,25);
+	}
+
+	.menu-title2{
+		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+	}	
+
+	.menu-title3{
+		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+	}	
+
+	.menu-title4{
+		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+	}	
+
 	.menu-items{
 		font-family: 'Titillium Web', sans-serif;
-		margin-bottom: 3em;
-
 		
 	}
-	.dunno2{
-
-	}
+	
 	.menu-course{
 		text-align: center;
 		font-size:4vw;
 		font-weight: bold;
 		display: flex;
 		justify-content: space-between;
-
 	}
 
+	.menu-list{
+		font-size: 2.1vw;
+		text-align: left;
+	}
 	.lines-left{
 		width:14vw;
 		float: left;
@@ -361,10 +435,7 @@ a {
 		float: right;
 	}
 
-	.menu-list{
-		font-size: 2.5vw;
-		text-align: left;
-	}
+	
 	.price{
 		float: right;
 		margin-right: 2.5vw;
@@ -435,7 +506,6 @@ a {
 	}
 
 	
-	
 	#container-p1-menu1{
 		display: flex;
   		border-radius: 10px;
@@ -448,7 +518,6 @@ a {
   		margin:auto;
   		margin-top: 2em;
   		margin-bottom: 10em;
-  		padding-top:3em;
   		padding-bottom: 3em;
 	}
 
@@ -457,21 +526,41 @@ a {
 		display: flex;
 		flex-direction: column;
 		flex-grow: 1;
-		min-width: 50vw;
+		min-width: 45vw;
 	}
-		
-	.menu-title1{
+	
+	.menu-title1, .menu-title2, .menu-title3 , .menu-title4{
 		font-family: 'Zhi Mang Xing', cursive;
 		text-align: center;
 		font-size: 3.6vw;
-		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-  		-webkit-background-clip: text;
-  		-webkit-text-fill-color: transparent;
   		width: 100%;
 	}
+
+	.menu-title1{
+		color: rgb(61,19,25);
+	}
+
+	.menu-title2{
+		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+	}	
+
+	.menu-title3{
+		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+	}	
+
+	.menu-title4{
+		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+	}	
+	
 	.menu-items{
 		font-family: 'Titillium Web', sans-serif;
-		margin-bottom: 3em;
+		
 	}
 	.menu-course{
 		text-align: center;
@@ -492,7 +581,7 @@ a {
 	}
 
 	.menu-list{
-		font-size: 2vw;
+		font-size: 1.2vw;
 		text-align: left;
 
 	}
@@ -504,4 +593,6 @@ a {
 	ul{
 		margin-left: -6vw;
 	}
+
+
 }
