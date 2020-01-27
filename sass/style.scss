@@ -10,6 +10,11 @@ h1{
 	font-size: 52px;
 	font-weight: normal;
 }	
+
+h2{
+	padding-top:1em;
+	margin-bottom: -1em;
+}
 .footer{
 	color: rgb(253,203,70);
 	font-family: 'passion one' ;
@@ -110,6 +115,7 @@ a {
 	font-size: 1.5em;
 	font-weight: normal;
 }
+
 .color-m1{
 	color: rgb(61, 19, 25);
 }
@@ -146,6 +152,91 @@ a {
 	  transform: scaleX(1);
 	  transform-origin:0 50%;
 }
+
+/*Background-colors*/
+.back-color1{
+	background-color:rgb(252, 223, 219);
+}
+
+.back-color2{
+	background-color:rgb(255, 245, 254) 
+}
+
+.back-color3{
+	background-color:rgb(237, 239, 239);
+}
+
+.back-color4{
+	background-color:rgb(253, 255, 253);
+}
+
+/*Multicolor menu title */
+.menu-title1{
+	color: rgb(61,19,25);
+}
+
+.menu-title2{
+	background: linear-gradient(to right, rgb(219, 133, 40) , rgb(203,124,86), rgb(192,118,116), rgb(158,100,213), rgb(143,91,254));
+	-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+}	
+
+.menu-title3{
+	background: linear-gradient(to right, rgb(2,45,223) , rgb(4,77,233), rgb(6,101,240), rgb(8,133,250), rgb(8,137,251),rgb(8,141,253));
+	-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+}	
+
+.menu-title4{
+	background: linear-gradient(to right, rgb(65,150,60) , rgb(101,180,79), rgb(128,203,94), rgb(156,226,109), rgb(184,250,124), rgb(190,255,127));
+	-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+}	
+
+#entree-m2 .category{
+	color:rgb(198, 116, 18);
+}
+#plat-m2 .category{
+	color:rgb(165, 103, 153);
+}
+#dessert-m2 .category{
+	color:rgb(110, 76, 204);
+}
+
+/*minimize*/
+
+.menu-title1, .menu-title2, .menu-title3 , .menu-title4{
+	font-family: 'Zhi Mang Xing', cursive;
+	text-align: center;
+}
+
+.menu-items{
+	font-family: 'Titillium Web', sans-serif;	
+}
+
+
+.menu-title{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+#container-p1-menu1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+
+	}
+
+.mention-legales{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
 
 @media only screen and (min-width: 350px) and (max-width: 500px) { /* Mobile Styles */
 	.container{
@@ -184,9 +275,6 @@ a {
 	
 	
 	.mention-legales{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 		margin-left: 20%;
 		margin-right: 20%;
 		text-align: justify;
@@ -198,19 +286,12 @@ a {
 	}
 	
 	#container-p1-menu1{
-		display: flex;
-  		border-radius: 10px;
-  		flex-direction: column;
-  		align-items: center;
-  		background-color:rgb(252, 223, 219);
+		border-radius: 10px;
   		width: 95%;
-  		text-align: center;
-  		justify-content: center;
   		margin:auto;
   		margin-top: 2em;
   		margin-bottom: 7em;
-  		padding-top:3em;
-  			}
+  	}
 
 	.note{
 		width: 2em;
@@ -219,43 +300,14 @@ a {
 		margin-top: -3em;
 	}
 
-	.menu-title{
-		text-align: center;
-	}
-		
 	.menu-title1, .menu-title2, .menu-title3 , .menu-title4{
-		font-family: 'Zhi Mang Xing', cursive;
-		text-align: center;
 		font-size: 8vw;
   		width: 100%;
 	}
-
-	.menu-title1{
-		color: rgb(61,19,25);
-	}
-
-	.menu-title2{
-		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-		-webkit-background-clip: text;
-  		-webkit-text-fill-color: transparent;
-	}	
-
-	.menu-title3{
-		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-		-webkit-background-clip: text;
-  		-webkit-text-fill-color: transparent;
-	}	
-
-	.menu-title4{
-		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-		-webkit-background-clip: text;
-  		-webkit-text-fill-color: transparent;
-	}	
 	.menu-items{
-		font-family: 'Titillium Web', sans-serif;
 		width: 85vw;
 		align-items: center;
-		margin-bottom: 2.5em;
+	
 		
 	}
 	.menu-course{
@@ -293,6 +345,11 @@ a {
 
 	.footer{
 		font-size: 1.5em;
+	}
+
+	.cursive{
+	font-family:  cursive;
+	font-size: 2.4vw;
 	}
 
 }
@@ -341,9 +398,6 @@ a {
 	 /*for menu-page */
 	
 	.mention-legales{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 		margin-left: 20%;
 		margin-right: 20%;
 		text-align: justify;
@@ -356,14 +410,8 @@ a {
 
 	
 	#container-p1-menu1{
-		display: flex;
   		border-radius: 10px;
-  		flex-direction: column;
-  		align-items: center;
-  		background-color:rgb(252, 223, 219);
   		width: 75vw;
-  		text-align: center;
-  		justify-content: center;
   		margin:auto;
   		margin-top: 2em;
   		margin-bottom: 10em;
@@ -372,46 +420,15 @@ a {
 	}
 
 	.menu-title{
-		text-align: center;
-		display: flex;
-		flex-direction: column;
 		flex-grow: 1;
-		min-width: 55vw; /*edo edo edo*/
+		min-width: 65vw; /*edo edo edo*/
 	}
 		
 	.menu-title1, .menu-title2, .menu-title3 , .menu-title4{
-		font-family: 'Zhi Mang Xing', cursive;
-		text-align: center;
 		font-size: 4.3vw;
   		width: 100%;
 	}
 
-	.menu-title1{
-		color: rgb(61,19,25);
-	}
-
-	.menu-title2{
-		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-		-webkit-background-clip: text;
-  		-webkit-text-fill-color: transparent;
-	}	
-
-	.menu-title3{
-		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-		-webkit-background-clip: text;
-  		-webkit-text-fill-color: transparent;
-	}	
-
-	.menu-title4{
-		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-		-webkit-background-clip: text;
-  		-webkit-text-fill-color: transparent;
-	}	
-
-	.menu-items{
-		font-family: 'Titillium Web', sans-serif;
-		
-	}
 	
 	.menu-course{
 		text-align: center;
@@ -426,12 +443,12 @@ a {
 		text-align: left;
 	}
 	.lines-left{
-		width:14vw;
+		width:16vw;
 		float: left;
 	}
 
 	.lines-right{
-		width: 14vw;
+		width: 16vw;
 		float: right;
 	}
 
@@ -444,6 +461,10 @@ a {
 
 	ul{
 		margin-left: -3em;
+	}
+	.cursive{
+	font-family:  cursive;
+	font-size: 2.1vw;
 	}
 }
 
@@ -492,9 +513,6 @@ a {
 	 /*for menu-page */
 	
 	.mention-legales{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 		margin-left: 20%;
 		margin-right: 20%;
 		text-align: justify;
@@ -502,19 +520,13 @@ a {
 
 	li{
 		list-style-type:none;
-		margin-left: 2em;
+		margin-left: 3.3em;
 	}
 
 	
 	#container-p1-menu1{
-		display: flex;
   		border-radius: 10px;
-  		flex-direction: column;
-  		align-items: center;
-  		background-color:rgb(252, 223, 219);
   		width: 55vw;
-  		text-align: center;
-  		justify-content: center;
   		margin:auto;
   		margin-top: 2em;
   		margin-bottom: 10em;
@@ -522,61 +534,30 @@ a {
 	}
 
 	.menu-title{
-		text-align: center;
-		display: flex;
-		flex-direction: column;
 		flex-grow: 1;
 		min-width: 45vw;
 	}
 	
 	.menu-title1, .menu-title2, .menu-title3 , .menu-title4{
-		font-family: 'Zhi Mang Xing', cursive;
-		text-align: center;
 		font-size: 3.6vw;
   		width: 100%;
 	}
 
-	.menu-title1{
-		color: rgb(61,19,25);
-	}
-
-	.menu-title2{
-		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-		-webkit-background-clip: text;
-  		-webkit-text-fill-color: transparent;
-	}	
-
-	.menu-title3{
-		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-		-webkit-background-clip: text;
-  		-webkit-text-fill-color: transparent;
-	}	
-
-	.menu-title4{
-		background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-		-webkit-background-clip: text;
-  		-webkit-text-fill-color: transparent;
-	}	
-	
-	.menu-items{
-		font-family: 'Titillium Web', sans-serif;
-		
-	}
 	.menu-course{
 		text-align: center;
-		font-size:2.3vw;
-		font-weight: bold;
+		font-size:1.7vw;
+		font-weight: normal;
 		display: flex;
 		justify-content: space-between;
 	}
 
 	.lines-left{
-		width:10vw;
+		width:14.5vw;
 		float: left;
 	}
 
 	.lines-right{
-		width: 10vw;
+		width: 14.5vw;
 		float: right;
 	}
 
@@ -594,5 +575,8 @@ a {
 		margin-left: -6vw;
 	}
 
-
+	.cursive{
+	font-family:  cursive;
+	font-size: 1.5vw;
+	}
 }
