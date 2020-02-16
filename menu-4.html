@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
         <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Menu - La palette du goût">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
+     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Passion+One|Titillium+Web|Zhi+Mang+Xing&display=swap" rel="stylesheet">
 
     <title>ohmyfood</title>
@@ -16,45 +18,54 @@
   </header>
 
   <body>
-    <h2 class="title">La palette du goût</h2>
-    <section id="container-p1-menu1" class="back-color4"> 
-      <div class="menu-title">
-        <p class="menu-title4">La palette du goût</p>
-        
-        <div id="entree-m4">
-          <p class="menu-course"><img src="https://i.ibb.co/q76ytx3/img-menu4-line-left.jpg" class="lines-left"><span class="underline cursive" class="category">Esquisse</span><img src="https://i.ibb.co/Fw6YwDP/img-menu4-line-right.jpg" class="lines-right"></p>
-            <ul class="menu-items">
-              <li class="menu-list">Fricassée d'escargot au piment d'espelette <span class="price">60€</span></li>
-              <li class="menu-list">Ouef au plat assaisonné à la truffe sur lit de caviar <span class="price">55€</span></li>
-              <li class="menu-list">Foie gras de canard mi-cuit et ses copeaux de truffe noir<span class="price">65€</span></li>
-            </ul>
-        </div>
+    <section id="container">
+      <h2 class="container__menu-title">La palette du goût</h2>
+      <section id="container__menu-page" class="container__menu-page--back-color-m4"> 
+        <div>
+          <p class="container__menu-name--m4-color">La palette du goût</p>
 
-        <div  id="plat">
-         <p class="menu-course"><img src="https://i.ibb.co/q76ytx3/img-menu4-line-left.jpg" class="lines-left"><span class="underline cursive">Ouevre de maître</span> <img src="https://i.ibb.co/Fw6YwDP/img-menu4-line-right.jpg" class="lines-right"></p>
-            <ul class="menu-items">
-              <li class="menu-list">Filet de boeuf aux herbes accompagné de sa ribambelle de légumes <span class="price">70€</span></li>
-              <li class="menu-list">Parmentier de queue de boeuf à la truffe noire sur sa purée de panais <span class="price">85€</span></li>
-              <li class="menu-list">Filet de Turbot aux agrumes <span class="price">125€</span></li>
+          <!-- Les menus -->
+          <div>
+            <p class="container__courses">
+              <img src="https://i.ibb.co/q76ytx3/img-menu4-line-left.jpg" class="container__courses--lines-left">
+              <span class="container__courses--underline cursive" class="category">Esquisse</span>
+              <img src="https://i.ibb.co/Fw6YwDP/img-menu4-line-right.jpg" class="container__courses--lines-right">
+            </p>
+            <ul>
+              <li class="container__menu-items">Fricassée d'escargot au piment d'espelette <span class="price">60€</span></li>
+              <li class="container__menu-items">Ouef au plat assaisonné à la truffe sur lit de caviar <span class="price">55€</span></li>
+              <li class="container__menu-items">Foie gras de canard mi-cuit et ses copeaux de truffe noir<span class="price">65€</span></li>
             </ul>
-        </div>
+          </div>
 
-        <div id="dessert">
-         <p class="menu-course"><img src="https://i.ibb.co/q76ytx3/img-menu4-line-left.jpg" class="lines-left"><span class="underline cursive">Au sommet de l'art</span><img src="https://i.ibb.co/Fw6YwDP/img-menu4-line-right.jpg" class="lines-right"></p>
-            <ul class="menu-items" >
-              <li class="menu-list">Paris-Brest revisité<span class="price">55</span></li>
-              <li class="menu-list">Macaron au chocolat d'exception et glace à la vanille de Madagascar<span class="price">65€</span></li>
-              <li class="menu-list">Mousse au chocolat au piment d'espelette et à la truffe noire<span class="price">60€</span></li>
+          <div>
+            <p class="container__courses">
+              <img src="https://i.ibb.co/q76ytx3/img-menu4-line-left.jpg" class="container__courses--lines-left"><span class="container__courses--underline cursive">Ouevre de maître</span>
+              <img src="https://i.ibb.co/Fw6YwDP/img-menu4-line-right.jpg" class="container__courses--lines-right"></p>
+            <ul>
+              <li class="container__menu-items">Filet de boeuf aux herbes accompagné de sa ribambelle de légumes <span class="price">70€</span></li>
+              <li class="container__menu-items">Parmentier de queue de boeuf à la truffe noire sur sa purée de panais <span class="price">85€</span></li>
+              <li class="container__menu-items">Filet de Turbot aux agrumes <span class="price">125€</span></li>
             </ul>
-        </div>
-    </div> 
+          </div>
 
+          <div>
+            <p class="container__courses">
+              <img src="https://i.ibb.co/q76ytx3/img-menu4-line-left.jpg" class="container__courses--lines-left">
+              <span class="container__courses--underline cursive">Au sommet de l'art</span>
+              <img src="https://i.ibb.co/Fw6YwDP/img-menu4-line-right.jpg" class="container__courses--lines-right"></p>
+            <ul>
+              <li class="container__menu-items">Paris-Brest revisité<span class="price">55</span></li>
+              <li class="container__menu-items">Macaron au chocolat d'exception et glace à la vanille de Madagascar<span class="price">65€</span></li>
+              <li class="container__menu-items">Mousse au chocolat au piment d'espelette et à la truffe noire<span class="price">60€</span></li>
+            </ul>
+          </div>
+        </div> 
+      </section>
     </section>
-
-
   </body>
 
   <footer id="footer">
-    <div><h2 class="footer">Mentions légales</h2></div>
-    <div><h2 class="footer"><a href="mailto:adresse@serveur.com"> Contactez-nous </a></h2></div>
+    <div><h2 class="footer" ><a href="mention-legales.html" target="blank">Mentions légales</h2></a></div>
+    <div><h2 class="footer"><a href="mailto:adresse@ohmyfood.fr"> Contactez-nous </a></h2></div>
   </footer>
