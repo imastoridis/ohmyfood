@@ -116,7 +116,8 @@ Animations
 .container__courses--underline:after {
   display: block;
   content: '';
-  border-bottom: solid 4px #000;
+  border-bottom: solid 2px #000;
+  opacity: 0.6;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
   transform-origin: 100% 50%; }
@@ -143,19 +144,71 @@ Animations
 .container__menu-title {
   text-align: center;
   font-family: "passion one";
-  /*margin-top: 30px;*/ }
+  font-size: 2em;
+  margin-top: 50px;
+  margin-bottom: 50px; }
 
-.container__menu-name {
-  /*to keep*/
+/*.container__menu-name--m1 { 
   color: black;
   font-family: "passion one";
-  font-size: 1.5em;
   font-weight: normal;
-  text-align: center; }
+  text-align: center;  }*/
+#container__menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 100px; }
 
 #container__menu-page {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 60px; }
+
+.container__menu-name {
+  font-family: 'Zhi Mang Xing', cursive;
+  text-align: center; }
+
+.container__menu-items {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: left;
+  margin-left: 20px; }
+
+.mention-legales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  margin-left: 35px;
+  margin-right: 35px; }
+
+.container__courses {
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between; }
+
+.container__courses--m2 {
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between; }
+
+#container__img {
+  text-align: center; }
+
+.container__courses--lines-left {
+  width: 6.2em;
+  float: left;
+  align-content: left;
+  margin-left: 3px; }
+
+.container__courses--lines-right {
+  width: 6.2em;
+  float: right;
+  margin-right: 3px; }
 
 /*************************
 Colors
@@ -202,27 +255,6 @@ Colors
 #container__courses--dessert-m2-color {
   color: #6e4ccc; }
 
-/*minimize*/
-.container__menu-name--m1, .container__menu-name--m2,
-.container__menu-name--m3, .container__menu-name--m4 {
-  font-family: 'Zhi Mang Xing', cursive;
-  text-align: center; }
-
-.container__menu-items {
-  font-family: 'Titillium Web', sans-serif;
-  text-align: left; }
-
-.mention-legales {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.container__courses {
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between; }
-
 @media only screen and (min-width: 300px) and (max-width: 500px) {
   /* Mobile Styles */
   img {
@@ -240,54 +272,40 @@ Colors
     margin-bottom: 2em; }
 
   /*for menu-page */
-  .mention-legales {
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: justify; }
-
   li {
-    list-style-type: none;
-    margin-left: 2em; }
+    list-style-type: none; }
 
   #container__menu-page {
     border-radius: 10px;
-    width: 95%;
-    margin: auto;
-    margin-top: 2em;
-    margin-bottom: 7em; }
+    width: 85%;
+    margin: auto; }
 
-  .container__img-container__img-note {
-    width: 2em;
-    margin-top: -3em; }
+  .container__img-note {
+    width: 3em;
+    height: auto;
+    margin-top: 15px; }
 
-  .container__menu-name--m1, .container__menu-name--m2,
-  .container__menu-name--m3, .container__menu-name--m4 {
-    font-size: 8vw;
+  .container__menu-name {
+    font-size: 7vw;
     width: 100%; }
 
   .container__courses {
-    font-size: 0.8em; }
+    font-size: 0.82em; }
+
+  .container__courses--m2 {
+    font-size: 0.7em; }
 
   .container__menu-items {
-    font-size: 0.5em;
+    font-size: 0.52em;
     text-align: left; }
-
-  .container__courses--lines-left {
-    max-width: 5em;
-    float: left;
-    align-content: left; }
-
-  .container__courses--lines-right {
-    max-width: 5em;
-    float: right; }
 
   .price {
     float: right;
-    margin-right: 1em;
+    margin-right: 10px;
     font-weight: bold; }
 
   ul {
-    margin-left: -3em; }
+    margin-left: -50px; }
 
   .cursive {
     font-family: cursive;
@@ -332,46 +350,44 @@ Colors
     max-height: auto; }
 
   /*for menu-page */
-  .mention-legales {
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: justify; }
-
   li {
-    list-style-type: none;
-    margin-left: 2em; }
+    list-style-type: none; }
 
   #container__menu-page {
     border-radius: 10px;
     width: 75vw;
-    margin: auto;
-    margin-top: 2em;
     margin-bottom: 10em;
     padding-bottom: 3em; }
 
-  .container__menu-page {
+  /*.container__menu-page {
     flex-grow: 1;
     min-width: 65vw;
-    /*edo edo edo*/ }
-
-  .container__menu-name--m1, .container__menu-name--m2,
-  .container__menu-name--m3, .container__menu-name--m4 {
-    font-size: 4.3vw;
+    edo edo edo}*/
+  .container__menu-name {
+    font-size: 2.5em;
     width: 100%; }
 
+  .container__menu-title {
+    font-size: 3em; }
+
   .container__courses {
-    font-size: 4vw; }
+    font-size: 1.4em; }
+
+  .container__courses--m2 {
+    font-size: 1.3em; }
 
   .container__menu-items {
-    font-size: 2.1vw; }
+    font-size: 0.8em; }
 
   .container__courses--lines-left {
-    width: 16vw;
-    float: left; }
+    min-width: 5em;
+    max-width: 8em;
+    margin-left: 5px; }
 
   .container__courses--lines-right {
-    width: 16vw;
-    float: right; }
+    min-width: 5em;
+    max-width: 8em;
+    margin-right: 5px; }
 
   .price {
     float: right;
@@ -422,15 +438,9 @@ Colors
 
   img {
     width: 100%;
-    height: auto;
-    /*to check the height??*/ }
+    height: auto; }
 
   /*for menu-page */
-  .mention-legales {
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: justify; }
-
   li {
     list-style-type: none;
     margin-left: 3.3em; }
@@ -438,13 +448,11 @@ Colors
   #container__menu-page {
     border-radius: 10px;
     width: 55vw;
-    margin: auto;
     margin-top: 2em;
     margin-bottom: 10em;
     padding-bottom: 3em; }
 
-  .container__menu-name--m1, .container__menu-name--m2,
-  .container__menu-name--m3, .container__menu-name--m4 {
+  .container__menu-name {
     font-size: 3.6vw;
     width: 100%; }
 
@@ -453,10 +461,10 @@ Colors
     font-weight: normal; }
 
   .container__courses--lines-left {
-    width: 14.5vw; }
+    width: 7em; }
 
   .container__courses--lines-right {
-    width: 14.5vw; }
+    width: 7em; }
 
   .container__menu-items {
     font-size: 1.2vw; }
