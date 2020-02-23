@@ -117,8 +117,9 @@ Animations
   position: relative;
   text-decoration: none;
   display: inline-block;
-  font-family: 'Zhi Mang Xing';
-  font-weight: normal; }
+  font-family: 'Titillium Web';
+  font-weight: normal;
+  font-style: italic;  }
 
 .container__courses--underline:after {
   display: block;
@@ -164,9 +165,9 @@ Animations
 
 .container__courses {
   text-align: center;
-  font-weight: bold;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  font-weight: normal; }
 
 .container__courses--m2 {
   text-align: center;
@@ -180,7 +181,7 @@ Animations
   font-weight: normal;}
 
 .container__menu-name--m2  {
-  font-family: 'Titillium Web';
+  font-family: 'Titillium Web', sans-serif;
   text-align: center; 
   font-weight: bold;
   margin-bottom: 35px;}
@@ -197,10 +198,6 @@ Animations
 .container__courses--cursive-bold{
   font-family: 'Titillium Web', sans-serif;
   font-style: italic;
-  font-weight: bold; }
-
-.container__courses--fontm2{
-  font-family: 'Titillium Web', sans-serif;
   font-weight: bold; }
 
 .container__menu-items--cursive{
@@ -244,8 +241,8 @@ Animations
   margin-right: 35px; }
 
 #mention-legales{
-  text-align: center;
-}
+  text-align: center; }
+
 img {
   width: 100%;
   max-height: auto; }
@@ -353,16 +350,13 @@ Colors
   .container__courses {
     font-size: 0.82em; }
 
- .container__courses--cursive {
+  .container__courses--cursive {
     font-size: 0.82em; }
 
   .container__courses--m2 {
     font-size: 0.7em; }
 
-  .container__menu-items {
-    font-size: 0.52em; }
-
-  .container__menu-items--cursive{
+  .container__menu-items, .container__menu-items--cursive {
     font-size: 0.52em; }
 }
 
@@ -401,11 +395,7 @@ Colors
   .container__courses--cursive, .container__courses--cursive-bold{
     font-size: 0.9em; }
 
-  .container__menu-items {
-    font-size: 0.63em;
-    text-align: left; }
-
-  .container__menu-items--cursive {
+  .container__menu-items, .container__menu-items--cursive  {
     font-size: 0.63em;
     text-align: left; }
 }
@@ -476,11 +466,8 @@ Colors
   .container__courses--cursive, .container__courses--cursive-bold{
     font-size: 3.5vw; }
 
-  .container__menu-items {
+  .container__menu-items,  .container__menu-items--cursive {
     font-size: 1.3em;}
-
-  .container__menu-items--cursive {
-    font-size: 1.3em; }
 
   .container__courses--lines-left {
   	width: 26vw;
@@ -552,7 +539,7 @@ Colors
  
   #container__menu-page {
     border-radius: 10px;
-    width: 70vw;
+    width: 65vw;
     
     margin-bottom: 50px;
     padding-bottom: 3em; }
@@ -573,13 +560,10 @@ Colors
     font-size: 2.1vw; }
 
   .container__courses--cursive, .container__courses--cursive-bold{
-    font-size: 2.5vw; }
+    font-size: 2vw; }
 
-  .container__menu-items {
-    font-size: 1.3em; }
-
-  .container__menu-items--cursive {
-    font-size: 1.3em; }
+  .container__menu-items, .container__menu-items--cursive  {
+    font-size: 1.5em; }
 
   .container__courses--lines-left {
     width: 20vw;
