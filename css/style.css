@@ -545,13 +545,13 @@ Colors
     font-size: 1.7em; }
 
   .container__courses--m2 {
+    font-size: 1.9vw; }
+
+  .container__courses--cursive, .container__courses--cursive-bold, .container__courses--underline {
     font-size: 2.1vw; }
 
-  .container__courses--cursive, .container__courses--cursive-bold {
-    font-size: 2vw; }
-
   .container__menu-items, .container__menu-items--cursive {
-    font-size: 1.5em; }
+    font-size: 1.2em; }
 
   .container__courses--lines-left {
     width: 20vw;
