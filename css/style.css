@@ -243,7 +243,7 @@ Animations
 
 img {
   width: 100%;
-  max-height: auto; }
+  height: auto; }
 
 li {
   list-style-type: none; }
