@@ -1,64 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
         <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Menu - La note enchantée">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Passion+One|Titillium+Web|Zhi+Mang+Xing&display=swap" rel="stylesheet">
+      <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Passion+One|Titillium+Web:400,400i|Zhi+Mang+Xing&display=swap" rel="stylesheet">
 
     <title>ohmyfood</title>
   </head>
 
-  <header id="header">
+  <header>
     <h1><a href="index.html">ohmyfood</a></h1>
   </header>
 
   <body>
-    <div></div>
-    <h2 class="title">La note enchantée</h2>
-    <section id="container-p1-menu1" class="back-color1"> 
-      <div class="menu-title" >
+    <section id="container__menu">
+      <h2 class="container__menu-title">La note enchantée</h2>
+      <section id="container__menu-page" class="container__menu-page--back-color-m1"> 
         <div>
-          <img src="https://i.ibb.co/gDJVSdq/img-note.jpg" class="note"></div>
-          <p class="menu-title1">La note enchantée</p>
-        
-        <div id="entree" class="color-m1">
-          <p class="menu-course"><img src="https://i.ibb.co/p1fZhfT/img-menu1-line.jpg" class="lines-left"><span class="underline">Prélude</span><img src="https://i.ibb.co/p1fZhfT/img-menu1-line.jpg" class="lines-right"></p>
-            <ul class="menu-items">
-              <li class="menu-list">Ravioles de fois gras accompagnés de leur créme a la truffe <span class="price">98€</span></li>
-              <li class="menu-list">Caviar oscètre sur blini a la farine de blé noir <span class="price">115€</span></li>
-              <li class="menu-list">Omard et espuma de potiron mariné aux wests d'orange <span class="price">89€</span></li>
-              <li class="menu-list">Fois gras de canard cuit entier,confiture de figue et pain toasté <span class="price">105€</span></li>
-            </ul>
-        </div>
+          <div>
+            <img src="https://i.ibb.co/gDJVSdq/img-note.jpg" class="container__img-note">
+          </div>
+          <p class="container__menu-name container__menu-name--m1-color">La note enchantée</p>
 
-        <div  id="plat"  class="color-m1">
-         <p class="menu-course"><img src="https://i.ibb.co/p1fZhfT/img-menu1-line.jpg" class="lines-left"><span class="underline">Points d'orgue</span> <img src="https://i.ibb.co/p1fZhfT/img-menu1-line.jpg" class="lines-right"></p>
-            <ul class="menu-items">
-              <li class="menu-list">Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave <span class="price">102€</span></li>
-              <li class="menu-list">Langoustine poêlé,purée de patate douce <span class="price">205</span></li>
-              <li class="menu-list">Mijoté de queue de boeuf et riz sauvage aux zestes de citron <span class="price">169€</span></li>
+          <!-- Les menus -->
+          <div>
+            <p class="container__courses">
+              <img src="https://i.ibb.co/p1fZhfT/img-menu1-line.jpg" class="container__courses--lines-left">
+              <span class="container__courses--underline container__courses--cursive-bold">Prélude</span>
+              <img src="https://i.ibb.co/p1fZhfT/img-menu1-line.jpg" class="container__courses--lines-right">
+            </p>
+            <ul>
+              <li class="container__menu-items--cursive">Ravioles de fois gras accompagnés de leur créme a la truffe <span class="price">98€</span></li>
+              <li class="container__menu-items--cursive">Caviar oscètre sur blini a la farine de blé noir <span class="price">115€</span></li>
+              <li class="container__menu-items--cursive">Omard et espuma de potiron mariné aux wests d'orange <span class="price">89€</span></li>
+              <li class="container__menu-items--cursive">Fois gras de canard cuit entier,confiture de figue et pain toasté <span class="price">105€</span></li>
             </ul>
-        </div>
+          </div>
 
-        <div id="dessert"  class="color-m1">
-         <p class="menu-course"><img src="https://i.ibb.co/p1fZhfT/img-menu1-line.jpg" class="lines-left"><span class="underline">Mouvement final</span><img src="https://i.ibb.co/p1fZhfT/img-menu1-line.jpg" class="lines-right"></p>
-            <ul class="menu-items" >
-              <li class="menu-list">Macaron noisette et chocola, glace au caramel brun et sel de Guérande</li>
-              <li class="menu-list">Baba au rhum revisité avec son coulis de citron</li>
-              <li class="menu-list">Tarte au citron meringée destructurée</li>
+          <div>
+            <p class="container__courses">
+              <img src="https://i.ibb.co/p1fZhfT/img-menu1-line.jpg" class="container__courses--lines-left">
+              <span class="container__courses--underline container__courses--cursive-bold">Points d'orgue</span>
+              <img src="https://i.ibb.co/p1fZhfT/img-menu1-line.jpg" class="container__courses--lines-right">
+            </p>
+            <ul>
+              <li class="container__menu-items--cursive">Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave <span class="price">102€</span></li>
+              <li class="container__menu-items--cursive">Langoustine poêlé,purée de patate douce <span class="price">205</span></li>
+              <li class="container__menu-items--cursive">Mijoté de queue de boeuf et riz sauvage aux zestes de citron <span class="price">169€</span></li>
             </ul>
-        </div>
-    </div> 
+          </div>
 
+          <div>
+            <p class="container__courses">
+              <img src="https://i.ibb.co/p1fZhfT/img-menu1-line.jpg" class="container__courses--lines-left">
+              <span class="container__courses--underline container__courses--cursive-bold">Mouvement final</span>
+              <img src="https://i.ibb.co/p1fZhfT/img-menu1-line.jpg" class="container__courses--lines-right">
+            </p>
+            <ul>
+              <li class="container__menu-items--cursive">Macaron noisette et chocola, glace au caramel brun et sel de Guérande</li>
+              <li class="container__menu-items--cursive">Baba au rhum revisité avec son coulis de citron</li>
+              <li class="container__menu-items--cursive">Tarte au citron meringée destructurée</li>
+            </ul>
+          </div>
+        </div> 
+      </section>
     </section>
-
-
   </body>
 
   <footer id="footer">
-    <div><h2 class="footer">Mentions légales</h2></div>
-    <div><h2 class="footer"><a href="mailto:adresse@serveur.com"> Contactez-nous </a></h2></div>
+    <div><h2 class="footer" ><a href="mention-legales.html" target="blank">Mentions légales</h2></a></div>
+    <div><h2 class="footer"><a href="mailto:adresse@ohmyfood.fr"> Contactez-nous </a></h2></div>
   </footer>
