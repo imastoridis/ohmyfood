@@ -3,6 +3,7 @@ General
 */
 html{
   font-size: 100%; }
+
 body {
   margin: 0;
   padding: 0; }
@@ -13,15 +14,15 @@ header {
   justify-content: center; 
   margin: 0; }
 
+.title {
+  font-family: "passion one";
+  font-size: 4em;
+  font-weight: normal;
+  color: #fdcb46; }
+
 a {
   text-decoration: none;
   color: inherit; }
-
-h1 {
-  color: #fdcb46;
-  font-family: "passion one";
-  font-size: 3em;
-  font-weight: normal; }
 
 #footer {
   display: flex;
@@ -526,7 +527,7 @@ Colors
   #prochainement {
     background-color: #579c87;
     width: 300px;
-    padding: 05px;
+    padding: 15px;
     border-radius: 15px;
     margin-top: -1.5em;
     margin-bottom: 3.5em; 
