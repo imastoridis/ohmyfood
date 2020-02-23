@@ -32,7 +32,8 @@ h1 {
   position: fixed;
   bottom: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  padding: 15px; }
 
 .footer {
   font-size: 1.2em;
@@ -524,11 +525,12 @@ Colors
 
   #prochainement {
     background-color: #579c87;
-    width: 350px;
-    padding: 15px;
+    width: 300px;
+    padding: 05px;
     border-radius: 15px;
     margin-top: -1.5em;
-    margin-bottom: 3.5em; }
+    margin-bottom: 3.5em; 
+    font-size: 1.5em; }
 
   .container__img-note {
     width: 7em;
