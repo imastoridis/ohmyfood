@@ -31,10 +31,12 @@ a {
   font-family: "passion one";
   justify-content: space-between;
   position: fixed;
+  width: 100%;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 15px; }
+  padding-top: 15px;
+  padding-bottom: 15px; }
 
 .footer {
   font-size: 1.2em;
@@ -115,7 +117,7 @@ Animations
   position: relative;
   text-decoration: none;
   display: inline-block;
-  font-family: 'Titillium Web';
+  font-family: 'Courgette';
   font-weight: normal;
   font-style: italic; }
 
@@ -174,9 +176,9 @@ Animations
   justify-content: space-between; }
 
 .container__menu-name {
-  font-family: 'Zhi Mang Xing';
+  font-family: "Alex Brush", cursive;
   text-align: center;
-  font-weight: normal; }
+  font-weight: bold; }
 
 .container__menu-name--m2 {
   font-family: 'Titillium Web', sans-serif;
@@ -189,20 +191,16 @@ Animations
   text-align: left;
   margin-left: 20px; }
 
-.container__courses--cursive {
-  font-family: 'Titillium Web', sans-serif;
-  font-style: italic; }
-
-.container__courses--cursive-bold {
+.container__courses--m1 {
   font-family: 'Titillium Web', sans-serif;
   font-style: italic;
   font-weight: bold; }
 
 .container__menu-items--cursive {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Courgette', sans-serif;
   text-align: left;
   margin-left: 20px;
-  font-style: italic; }
+  font-weight: normal; }
 
 .container__courses--lines-left {
   width: 6.2em;
@@ -239,7 +237,9 @@ Animations
   margin-right: 35px; }
 
 #mention-legales {
-  text-align: center; }
+  text-align: center;
+  font-family: 'passion one';
+  font-size: 1.5em; }
 
 img {
   width: 100%;
@@ -345,16 +345,13 @@ Colors
     font-size: 1.8em; }
 
   .container__courses {
-    font-size: 0.82em; }
-
-  .container__courses--cursive {
-    font-size: 0.82em; }
+    font-size: 0.70em; }
 
   .container__courses--m2 {
     font-size: 0.7em; }
 
   .container__menu-items, .container__menu-items--cursive {
-    font-size: 0.52em; } }
+    font-size: 0.45em; } }
 /* Mobile Styles */
 @media only screen and (min-width: 330px) and (max-width: 500px) {
   header {
@@ -382,17 +379,16 @@ Colors
     font-size: 1.4em; }
 
   .container__courses {
-    font-size: 1em; }
+    font-size: 0.9em; }
 
   .container__courses--m2 {
     font-size: 0.8em; }
 
-  .container__courses--cursive, .container__courses--cursive-bold {
+  .container__courses--m1 {
     font-size: 0.9em; }
 
   .container__menu-items, .container__menu-items--cursive {
-    font-size: 0.63em;
-    text-align: left; } }
+    font-size: 0.6em; } }
 /* Tablet Styles */
 @media only screen and (min-width: 501px) and (max-width: 960px) {
   #container {
@@ -445,7 +441,7 @@ Colors
     font-size: 3.5em; }
 
   .container__menu-name--m2 {
-    font-size: 3.5em; }
+    font-size: 3em; }
 
   .container__menu-title {
     font-size: 3em; }
@@ -453,14 +449,14 @@ Colors
   .container__courses {
     font-size: 1.8em; }
 
+  .container__courses--m1 {
+    font-size: 3.5vw; }
+
   .container__courses--m2 {
     font-size: 1.5em; }
 
-  .container__courses--cursive, .container__courses--cursive-bold {
-    font-size: 3.5vw; }
-
   .container__menu-items, .container__menu-items--cursive {
-    font-size: 1.3em; }
+    font-size: 1.2em; }
 
   .container__courses--lines-left {
     width: 26vw;
@@ -530,7 +526,7 @@ Colors
   /*for menu-page */
   #container__menu-page {
     border-radius: 10px;
-    width: 65vw;
+    width: 70vw;
     margin-bottom: 50px;
     padding-bottom: 3em; }
 
@@ -549,8 +545,8 @@ Colors
   .container__courses--m2 {
     font-size: 1.9vw; }
 
-  .container__courses--cursive, .container__courses--cursive-bold, .container__courses--underline {
-    font-size: 2.1vw; }
+  .container__courses--m1, .container__courses--underline {
+    font-size: 2.4vw; }
 
   .container__menu-items, .container__menu-items--cursive {
     font-size: 1.2em; }
