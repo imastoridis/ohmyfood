@@ -292,17 +292,17 @@ Colors
 .container__menu-name--m2-color {
   background: linear-gradient(to right, #db8528, #cb7c56, #c07674, #9e64d5, #8f5bfe);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  color: transparent; }
 
 .container__menu-name--m3-color {
   background: linear-gradient(to right, #022ddf, #044de9, #0665f0, #0885fa, #0889fb, #088dfd);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  color: transparent; }
 
 .container__menu-name--m4-color {
   background: linear-gradient(to right, #41963c, #65b44f, #80cb5e, #9ce26d, #b8fa7c, #beff7f);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  color: transparent; }
 
 .container__courses--entree-m2-color {
   color: #c67412; }
@@ -535,23 +535,21 @@ Colors
     margin-top: 20px; }
 
   /*for menu-page */
- 
+  .container__menu-title{
+    font-size: 3em; } 
+
   #container__menu-page {
     border-radius: 10px;
     width: 70vw;
-    
     margin-bottom: 50px;
     padding-bottom: 3em; }
-
+ 
   .container__menu-name {
-    font-size: 3.5em; }
+    font-size: 4.2vw; }
 
   .container__menu-name--m2 {
-    font-size: 3.5em; }
+    font-size: 3.2vw; }
 
-  .container__menu-title{
-    font-size: 3em; }  
- 
   .container__courses {
     font-size: 1.7em; }
 
@@ -559,10 +557,10 @@ Colors
     font-size: 1.9vw; }
 
   .container__courses--m1, .container__courses--underline {
-    font-size: 2.4vw; }
+    font-size: 2.2vw; }
 
   .container__menu-items, .container__menu-items--cursive,  {
-    font-size: 1.2em; }
+    font-size: 1.3vw; }
 
   .container__courses--lines-left {
     width: 20vw;
