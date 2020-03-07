@@ -268,16 +268,16 @@ Colors
 .container__menu-page--back-color-m4 {
   background-color: #fdfffd; }
 
-.container__grid3 {
+#container__grid3 {
   background-color: #fcdfdb; }
 
-.container__grid4 {
+#container__grid4 {
   background-color: #fff5fe; }
 
-.container__grid6 {
+#container__grid6 {
   background-color: #edefef; }
 
-.container__grid7 {
+#container__grid7 {
   background-color: #fdfffd; }
 
 /* Multicolor menu title */
@@ -318,9 +318,12 @@ Colors
     flex-direction: column;
     text-align: center;
     align-content: space-around;
-    width: 100%;
+    width: 85%;
     margin: auto; }
 
+  .container__menu {
+    margin-top: 55px; }
+  
   .prochainement {
     margin-bottom: 100px;
     margin-top: 50px;
@@ -329,6 +332,9 @@ Colors
     text-align: center;
     align-items: center; }
 
+  #container__grid4, #container__grid3, #container__grid6, #container__grid7 {
+    margin-top: 50px; }
+    
   /*for menu-page */
   #container__menu-page {
     border-radius: 10px;
@@ -357,6 +363,14 @@ Colors
   header {
     margin-bottom: 25px; }
 
+  #container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: space-around;
+    width: 85%;
+    margin: auto; }
+
   .prochainement {
     margin-bottom: 100px;
     margin-top: 50px;
@@ -365,8 +379,8 @@ Colors
     text-align: center;
     align-items: center; }
 
-  .img-hover-zoom {
-    margin-bottom: 2em; }
+  #container__grid4, #container__grid3, #container__grid6, #container__grid7 {
+    margin-top: 50px; }
 
   /*for menu-page */
   #container__menu-page {
@@ -402,19 +416,18 @@ Colors
     grid-row-gap: 45px;
     justify-items: center; }
 
-  .container__grid1, .container__grid2, .container__grid3, .container__grid4,
-  .container__grid5, .container__grid6, .container__grid7, .container__grid8 {
+  .container__grid {
     text-align: center; }
 
-  .container__grid1, .container__grid8 {
+  #container__grid1, #container__grid8 {
     grid-column-start: 1;
     grid-column-end: 5;
     padding: 2em; }
 
-  .container__grid2, .container__grid5 {
+  #container__grid2, #container__grid5 {
     grid-row: 2 / 4; }
 
-  .container__grid5 {
+  #container__grid5 {
     grid-column: 4 / 4; }
 
   #prochainement {
@@ -494,19 +507,18 @@ Colors
     grid-column-gap: 65px;
     justify-items: center; }
 
-  .container__grid1, .container__grid2, .container__grid3, .container__grid4,
-  .container__grid5, .container__grid6, .container__grid7, .container__grid8 {
+  .container__grid {
     text-align: center; }
 
-  .container__grid1, .container__grid8 {
+  #container__grid1, #container__grid8 {
     grid-column-start: 1;
     grid-column-end: 5;
     padding: 2em; }
 
-  .container__grid2, .container__grid5 {
+  #container__grid2, #container__grid5 {
     grid-row: 2 / 4; }
 
-  .container__grid5 {
+  #container__grid5 {
     grid-column: 4 / 4; }
 
   #prochainement {
