@@ -321,6 +321,9 @@ Colors
     width: 85%;
     margin: auto; }
 
+  .container__menu {
+    margin-top: 55px; }
+
   .prochainement {
     margin-bottom: 100px;
     margin-top: 50px;
