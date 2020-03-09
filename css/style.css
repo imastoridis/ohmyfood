@@ -58,26 +58,10 @@ a {
 Animations
 */
 .footer:hover {
-  animation: shake 0.5s;
+  animation: wiggle 1s;
   animation-iteration-count: infinite; }
 
-#prochainement:after {
-  display: inline-block;
-  animation: suspension steps(1, end) 1s infinite;
-  content: ''; }
-
-@keyframes suspension {
-  0% {
-    content: ''; }
-  25% {
-    content: '.'; }
-  50% {
-    content: '..'; }
-  75% {
-    content: '...'; }
-  100% {
-    content: ''; } }
-@keyframes shake {
+@keyframes wiggle {
   0% {
     transform: translate(1px, 1px) rotate(0deg); }
   10% {
@@ -100,6 +84,22 @@ Animations
     transform: translate(1px, 2px) rotate(0deg); }
   100% {
     transform: translate(1px, -2px) rotate(-1deg); } }
+#prochainement:after {
+  display: inline-block;
+  animation: suspension 1s infinite;
+  content: ''; }
+
+@keyframes suspension {
+  0% {
+    content: ''; }
+  25% {
+    content: '.'; }
+  50% {
+    content: '..'; }
+  75% {
+    content: '...'; }
+  100% {
+    content: ''; } }
 /*zoom animation*/
 .img-hover-zoom {
   overflow: hidden;
@@ -252,7 +252,7 @@ li {
 ul {
   margin-left: -50px; }
 
-/*************************
+/***********************************************
 Colors
 */
 /*Background-colors*/
@@ -287,17 +287,17 @@ Colors
 
 .container-menu__name--m2-color {
   background: linear-gradient(to right, #db8528, #cb7c56, #c07674, #9e64d5, #8f5bfe);
-  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent; }
 
 .container-menu__name--m3-color {
   background: linear-gradient(to right, #022ddf, #044de9, #0665f0, #0885fa, #0889fb, #088dfd);
-  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent; }
 
 .container-menu__name--m4-color {
   background: linear-gradient(to right, #41963c, #65b44f, #80cb5e, #9ce26d, #b8fa7c, #beff7f);
-  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent; }
 
 .container-menu__courses--entree-m2-color {
@@ -309,8 +309,11 @@ Colors
 .container-menu__courses--dessert-m2-color {
   color: #6e4ccc; }
 
+/***********************************************
+Media querries
+*/
 /* iPhone 5/SE Styles */
-@media only screen and (min-width: 300px) and (max-width: 330px) {
+@media only screen and (min-width: 300px) and (max-width: 329px) {
   header {
     margin-bottom: 25px; }
 
@@ -323,15 +326,15 @@ Colors
     margin: 0 auto; }
 
   #prochainement {
-    margin-bottom: 100px;
-    margin-top: 50px;
+    margin-bottom: 90px;
+    margin-top: 30px;
     width: 60%;
     text-align: center;
     align-items: center;
     display: inline-block; }
 
   .container__grid {
-    margin-bottom: 25px; }
+    margin: 15px auto; }
 
   #prochainement-center {
     text-align: center; }
@@ -370,17 +373,17 @@ Colors
     text-align: center;
     align-content: space-around;
     width: 85%;
-    margin: auto; }
+    margin: 0 auto; }
 
   #prochainement {
-    margin-bottom: 100px;
-    margin-top: 50px;
+    margin-bottom: 90px;
+    margin-top: 30px;
     width: 60%;
     text-align: center;
     display: inline-block; }
 
   .container__grid {
-    margin-bottom: 25px; }
+    margin: 15px auto; }
 
   #prochainement-center {
     text-align: center; }
@@ -416,8 +419,7 @@ Colors
     grid-column-gap: 45px;
     grid-row-gap: 45px;
     justify-items: center;
-    padding-bottom: 70px;
-    padding-top: 70px; }
+    padding: 70px 0px; }
 
   #container__grid1, #container__grid3 {
     grid-column-start: 2;
@@ -499,14 +501,13 @@ Colors
 @media only screen and (min-width: 961px) {
   #container {
     display: grid;
-    grid-template-columns: auto 28% 28% auto;
+    grid-template-columns: auto 30% 30% auto;
     grid-template-rows: auto;
     border-radius: 10px;
     grid-row-gap: 65px;
     grid-column-gap: 65px;
     justify-items: center;
-    padding-bottom: 70px;
-    padding-top: 70px; }
+    padding: 70px 0px; }
 
   #container__grid1, #container__grid3 {
     grid-column-start: 2;
@@ -526,11 +527,6 @@ Colors
 
   #prochainement-center {
     text-align: center; }
-
-  .container-img__note {
-    width: 7em;
-    height: auto;
-    margin-top: 20px; }
 
   /*for menu-page */
   .container-menu__title {
@@ -575,6 +571,11 @@ Colors
 
   .price {
     margin-right: 40px; }
+
+  .container-img__note {
+    width: 7em;
+    height: auto;
+    margin-top: 40px; }
 
   ul {
     margin-left: -30px; } }
