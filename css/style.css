@@ -90,13 +90,19 @@ Menu pages
   text-align: center;
   display: flex;
   justify-content: space-between;
-  font-weight: normal; }
+  font-weight: normal;
+  padding: 25px 0; }
+
+.container-menu__courses--m1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold; }
 
 .container-menu__courses--m2 {
   text-align: center;
   font-weight: bold;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 25px 0; }
 
 .container-menu__name {
   font-family: "Alex Brush", cursive;
@@ -113,11 +119,6 @@ Menu pages
   font-family: 'Titillium Web', sans-serif;
   text-align: left;
   margin-left: 20px; }
-
-.container-menu__courses--m1 {
-  font-family: 'Titillium Web', sans-serif;
-  font-style: italic;
-  font-weight: bold; }
 
 .container-menu__items--cursive {
   font-family: 'Courgette', sans-serif;
@@ -223,13 +224,16 @@ Colors
   color: transparent; }
 
 .container-menu__courses--entree-m2-color {
-  color: #c67412; }
+  color: #c67412;
+  font-family: "passion one" !important; }
 
 .container-menu__courses--plat-m2-color {
-  color: #a56799; }
+  color: #a56799;
+  font-family: "passion one" !important; }
 
 .container-menu__courses--dessert-m2-color {
-  color: #6e4ccc; }
+  color: #6e4ccc;
+  font-family: "passion one" !important; }
 
 /******************
 Animations
@@ -295,8 +299,7 @@ Animations
   text-decoration: none;
   display: inline-block;
   font-family: 'Courgette';
-  font-weight: normal;
-  font-style: italic; }
+  font-weight: normal; }
 
 .container-menu__courses--underline:after {
   display: block;
